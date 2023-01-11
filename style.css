@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ecf2f8;
+    margin: 0 2rem 0 2rem;
+}
+
+.section-1 {
+    background-color: #7541c8;
+    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+}
+
+.container {
+    margin: 32px;
+}
+
+.bg__pattern img {
+    opacity: 70%;
+    position: absolute;
+    right: 16px;
+    width: 130px;
+    z-index: -1;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    padding-top: 25px;
+}
+
+.profile {
+    border-radius: 100px;
+    outline: 3px solid #ffffff82;
+}
+
+.name {
+    color: #ffffff;
+}
+
+.status {
+    color: #ffffff80;
+}
+
+.bold__content p{
+    color: #ffffff;
+    font-size: 23.8px;
+    font-weight: 600;
+    padding: 20px 0 10px;
+}
+
+.norm__content p{
+    color: #ffffff80;
+    font-size: 16.4px;
+    padding: 10px 0 35px;
+}
+
+.section-2 {
+    background-color: #48556a;
+    border-radius: 10px;
+}
+
+.section-3 {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.bold__content_dark p{
+    color: #47556b;
+    font-size: 23.8px;
+    font-weight: 600;
+    padding: 20px 0 10px;
+}
+
+.norm__content_dark p{
+    color: #48556a80;
+    font-size: 16.4px;
+    padding: 10px 0 35px;
+}
+
+.name-dark {
+    color: #48556a;
+}
+
+.status-dark {
+    color: #48556a80;
+}
+
+.section-4 {
+    background-color: #19212e;
+    border-radius: 10px;
+}
+
+.section-5 {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.section-4 .profile {
+    border-radius: 100px;
+    margin-right: 20px;
+    outline: 3px solid #7541c8;
+}
+
+@media only screen and (min-width: 1440px) {
+    .body {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 50px;
+    }
+
+    .bg__pattern img {
+        right: 100px;
+        top: 0;
+    }
+
+    .header__container {
+        padding: 0;
+    }
+
+    .norm__content p, .norm__content_dark p {
+        padding: 10px 0 0;
+    }
+
+    .section-1 {
+        grid-column: 1 / span 2;
+    }
+
+    .section-5 {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+
+    .section-4 {
+        grid-column: 2 / span 2;
+    }
+}
